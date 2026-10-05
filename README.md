@@ -47,6 +47,46 @@ y borradores privados.
 
 **[Explorar el proyecto →](projects/dbc-web/README.md)**
 
+### El día de Tadeo
+
+**Arquitectura, implementación técnica y despliegue de una aplicación web interactiva.**
+
+Desarrollé el sistema que conecta la experiencia en el navegador con la
+persistencia de sesiones y un panel docente protegido, y realicé su despliegue
+en Render. El contenido y la propuesta pedagógica fueron definidos por el
+equipo del proyecto.
+
+<img src="projects/el-dia-de-tadeo/assets/inicio.jpg" alt="Inicio de El día de Tadeo, capturado en una instancia local de demostración en vista móvil" width="347">
+
+**Tecnologías:** JavaScript · Python · FastAPI · PostgreSQL · SQLAlchemy · Alembic · Render
+
+**Aspectos destacados:** recuperación de sesiones, envíos idempotentes,
+compatibilidad entre versiones y administración protegida. Capturas locales
+con datos ficticios; no acreditan el estado actual del servicio publicado.
+
+**[Explorar el proyecto →](projects/el-dia-de-tadeo/README.md)**
+
+### Family Finance OS
+
+**Control de cuentas, deudas, ahorro y presupuesto para una familia.**
+
+Organiza cuentas personales y compartidas, efectivo, tarjetas, préstamos,
+tandas e inversiones registradas manualmente. Distingue los movimientos
+internos del gasto real y permite planear servicios mensuales o bimestrales.
+
+![Family Finance OS: dashboard con datos ficticios de demostración](projects/family-finance-os/assets/dashboard-demo.png)
+
+**Tecnologías:** Flutter · Dart · Python · FastAPI · PostgreSQL · Redis · Docker
+
+**Aspectos destacados:** transferencias con dos movimientos vinculados,
+ahorro separado del gasto, presupuesto bimestral prorrateado y snapshots
+manuales de patrimonio.
+
+**Estado:** MVP local en evolución. Interfaz mostrada con datos ficticios;
+sin conexión bancaria automática.
+
+**[Explorar el proyecto →](projects/family-finance-os/README.md)**
+
 ## Enfoque
 
 - **Procesos claros:** organizar el producto alrededor del trabajo que necesita realizar el usuario.
