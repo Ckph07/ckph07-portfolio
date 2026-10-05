@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="title desc">
+  <title id="title">CKPH07 Portfolio</title>
+  <desc id="desc">Proyectos de software, producto y operación.</desc>
+  <rect width="1280" height="380" rx="24" fill="#151C28"/>
+  <circle cx="1130" cy="40" r="240" fill="#223147"/>
+  <circle cx="1200" cy="360" r="240" fill="#243C48"/>
+  <g fill="none" stroke="#79D8BD" stroke-width="2" opacity=".5">
+    <rect x="951" y="111" width="145" height="95" rx="12"/>
+    <rect x="1024" y="166" width="145" height="95" rx="12"/>
+    <path d="M933 280h258M915 91h240"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="71" font-size="15" font-weight="700" letter-spacing="4" fill="#79D8BD">PROYECTOS / DECISIONES / RESULTADOS</text>
+    <text x="60" y="173" font-size="80" font-weight="700" fill="#F8FAFC">CKPH07</text>
+    <text x="64" y="231" font-size="33" fill="#79D8BD">Portfolio</text>
+    <text x="64" y="307" font-size="23" fill="#D5DEEA">Software, producto y operación.</text>
+  </g>
+</svg>

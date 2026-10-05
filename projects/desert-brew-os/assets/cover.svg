@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">Desert Brew OS - Portafolio del proyecto</title>
+  <desc id="desc">Sistema modular de operación cervecera. De la materia prima al margen, con trazabilidad.</desc>
+  <rect width="1280" height="480" rx="24" fill="#1C1917"/>
+  <path d="M840 0h440v480H840z" fill="#2C1810"/>
+  <circle cx="1130" cy="70" r="170" fill="#4A3228" opacity=".6"/>
+  <path d="M840 380 Q960 300 1090 380 T1280 370 V480 H840z" fill="#CC5A36" opacity=".3"/>
+  <path d="M840 424 Q960 355 1120 430 T1280 414 V480 H840z" fill="#D4A017" opacity=".3"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="76" font-size="15" font-weight="700" letter-spacing="3" fill="#E8C547">DESERT BREW CO. / INGENIERÍA DE SOFTWARE</text>
+    <text x="60" y="173" font-size="76" font-weight="700" fill="#FAF9F7">Desert Brew OS</text>
+    <text x="64" y="225" font-size="25" fill="#E8C547">La operación cervecera, conectada.</text>
+    <text x="64" y="276" font-size="20" fill="#D4D0CA">De la materia prima al margen, con trazabilidad.</text>
+    <rect x="64" y="327" width="192" height="42" rx="21" fill="#D4A017"/>
+    <text x="160" y="354" text-anchor="middle" font-size="16" font-weight="700" fill="#1C1917">MES + ERP MODULAR</text>
+    <text x="64" y="430" font-size="16" fill="#D4D0CA">Flutter · FastAPI · PostgreSQL · Docker</text>
+    <rect x="897" y="120" width="296" height="58" rx="12" fill="#FAF9F7"/>
+    <text x="1045" y="156" text-anchor="middle" font-size="19" font-weight="700" fill="#1C1917">Inventario y compras</text>
+    <path d="M1045 183v26" stroke="#E8C547" stroke-width="3"/>
+    <path d="m1039 203 6 7 6-7" fill="none" stroke="#E8C547" stroke-width="3"/>
+    <rect x="897" y="217" width="296" height="58" rx="12" fill="#FAF9F7"/>
+    <text x="1045" y="253" text-anchor="middle" font-size="19" font-weight="700" fill="#1C1917">Producción y calidad</text>
+    <path d="M1045 280v26" stroke="#E8C547" stroke-width="3"/>
+    <path d="m1039 300 6 7 6-7" fill="none" stroke="#E8C547" stroke-width="3"/>
+    <rect x="897" y="314" width="296" height="58" rx="12" fill="#E8C547"/>
+    <text x="1045" y="350" text-anchor="middle" font-size="19" font-weight="700" fill="#1C1917">Ventas y rentabilidad</text>
+  </g>
+</svg>
