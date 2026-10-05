@@ -3,19 +3,26 @@
 **Aplicación de finanzas personales y familiares para organizar cuentas,
 deudas, ahorro y presupuesto en un entorno local.**
 
-Family Finance OS reúne la captura diaria de movimientos y el seguimiento
-del patrimonio de una pareja. Separa dinero disponible, obligaciones y ahorro,
-y contempla cuentas personales y compartidas sin conexión bancaria automática.
+Family Finance OS reúne la captura de movimientos y el seguimiento del
+patrimonio de una pareja, con cuentas personales y compartidas.
 
-[Producto](#la-solución) · [Interfaz](#interfaz) ·
+- **Rol:** desarrollador principal de la arquitectura, backend e interfaz Flutter.
+- **Reto principal:** distinguir consumo, transferencias, ahorro y pago de deuda, y planear servicios mensuales o bimestrales.
+- **Estado:** MVP local en evolución, sin conexión bancaria automática.
+- **Evidencia:** revisión local al **4 de octubre de 2026**, capturas Flutter con respuestas API ficticias y validación documentada de análisis y 11 pruebas Flutter. Alcance en [Calidad y evidencia](#calidad-y-evidencia).
+
+[Mi aportación](#mi-aportación) · [Producto](#la-solución) · [Interfaz](#interfaz) ·
 [Arquitectura](#arquitectura-y-tecnologías) · [Decisiones](#decisiones-técnicas) ·
 [Calidad](#calidad-y-evidencia) · [Volver al portafolio](../../README.md)
 
-> **Estado: MVP local en evolución.** Presentación basada en el código y la
-> documentación local revisados el **4 de octubre de 2026**. Las capturas
-> muestran la interfaz Flutter implementada con respuestas API ficticias en
-> un navegador aislado; no son capturas de cuentas reales ni evidencia de
-> disponibilidad en producción.
+## Mi aportación
+
+Mi trabajo como desarrollador principal abarcó la arquitectura y la
+implementación del MVP, desde las reglas financieras hasta la interfaz Flutter.
+
+- **Arquitectura y backend:** separación de responsabilidades para cuentas, movimientos, presupuesto, patrimonio y reportes, con APIs en FastAPI.
+- **Reglas financieras:** movimientos vinculados de transferencias, tratamiento de ahorro y deuda, y prorrateo de servicios bimestrales.
+- **Frontend:** dashboard, formularios y vistas de consulta, incluyendo presupuesto, patrimonio y vista previa de importación CSV.
 
 ## El problema
 
@@ -204,6 +211,11 @@ una salida mensual de efectivo ni se genera una reserva automática.
 
 ## Calidad y evidencia
 
+Presentación basada en el código y la documentación local revisados el
+**4 de octubre de 2026**. Las capturas muestran la interfaz implementada en un
+navegador aislado; no acreditan disponibilidad en producción ni el procesamiento
+financiero de los servicios reales.
+
 El repositorio contiene pruebas Python de APIs y reglas financieras, incluyendo
 movimientos vinculados, roles, importación CSV, prorrateo de presupuesto,
 metas, agregación e invalidación de caché.
@@ -238,11 +250,5 @@ El enfoque local reduce la necesidad de enviar datos a proveedores externos;
 no sustituye controles de acceso, cifrado ni una política de respaldos.
 `owner_user_id` y `scope` organizan las vistas, no aíslan información entre
 los miembros con permisos de escritura.
-
-## Acerca de esta presentación
-
-La ficha permite recorrer el proyecto sin acceso al repositorio privado,
-a las bases de datos o al sistema operativo de la familia. Los nombres,
-montos, cuentas e históricos de las imágenes son ficticios.
 
 [Volver a CKPH07 Portfolio](../../README.md)

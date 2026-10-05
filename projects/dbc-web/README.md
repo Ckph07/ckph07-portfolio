@@ -2,22 +2,26 @@
 
 **Catálogo, descubrimiento de productos y administración de contenido para una cervecería artesanal.**
 
-DBC Web presenta la identidad y las cervezas de Desert Brew Co., ayuda a
-localizar puntos de venta y ofrece al equipo herramientas para mantener
-vigente la disponibilidad y gestionar lanzamientos de Desert Lab.
+DBC Web conecta el catálogo y los puntos de venta de Desert Brew Co. con una
+administración autorizada de disponibilidad y lanzamientos de Desert Lab.
 
-La experiencia pública reúne información de producto, localización y
-contacto. La administración utiliza persistencia y autorización en el
-servidor para actualizar el contenido que puede consultar el visitante.
+- **Rol:** desarrollador principal de la implementación full stack.
+- **Reto principal:** mantener información comercial vigente y permitir edición concurrente sin publicar borradores privados.
+- **Estado:** catálogo, localizador y administración implementados en el código revisado.
+- **Evidencia:** revisión local al **4 de octubre de 2026**, casos técnicos y capturas anteriores de la portada en escritorio y móvil. Alcance en [Calidad y evidencia](#calidad-y-evidencia).
 
-[Producto](#el-producto) · [Interfaz](#interfaz) ·
+[Mi aportación](#mi-aportación) · [Producto](#el-producto) · [Interfaz](#interfaz) ·
 [Arquitectura](#arquitectura-y-tecnologías) · [Casos técnicos](#casos-técnicos) ·
 [Calidad](#calidad-y-evidencia) · [Volver al portafolio](../../README.md)
 
-> Ficha preparada mediante revisión del código y la documentación local al
-> **4 de octubre de 2026**. Las capturas provienen de una revisión anterior;
-> esta entrega no verifica un despliegue público ni vuelve a ejecutar las
-> pruebas de la aplicación.
+## Mi aportación
+
+Como desarrollador principal, trabajé en la implementación full stack de la
+experiencia pública y de las herramientas de administración.
+
+- **Frontend:** catálogo, localizador e interfaces de administración con React y TypeScript, adaptadas a escritorio y móvil.
+- **Servidor y persistencia:** rutas de lectura y escritura, registros en D1 y almacenamiento de imágenes en R2.
+- **Reglas de edición:** vigencia de disponibilidad, autorización, control de revisiones y separación entre borradores y contenido público.
 
 ## El problema
 
@@ -53,9 +57,8 @@ La experiencia utiliza tipografía de alto contraste, superficies claras,
 acentos dorados y fotografías de producto. La portada organiza la navegación
 alrededor de cervezas, puntos de venta, visitas e información para negocios.
 
-Las siguientes imágenes se conservaron en una revisión anterior de la
-aplicación. Muestran únicamente la portada pública y no acreditan el estado
-actual del despliegue, del catálogo o de la disponibilidad.
+Las imágenes provienen de una revisión anterior y muestran únicamente la
+portada pública en escritorio y móvil.
 
 ### Escritorio
 
@@ -160,6 +163,11 @@ hasta 5 MB, validando tanto el tipo declarado como la firma del archivo.
 
 ## Calidad y evidencia
 
+Ficha preparada mediante revisión del código y la documentación local al
+**4 de octubre de 2026**. Las capturas conservadas no acreditan el estado actual
+del despliegue, del catálogo o de la disponibilidad. No se verificó el servicio
+público ni se volvió a ejecutar la suite durante su preparación.
+
 La implementación incluye pruebas que cubren:
 
 - Vencimiento en el límite de los 15 días y confirmaciones inválidas o futuras.
@@ -173,9 +181,7 @@ Las pruebas de API usan SQLite y sustituyen el módulo de ejecución de
 Cloudflare dentro de Node. Esa verificación no equivale a una prueba del
 despliegue real en Workers.
 
-Esta ficha documenta las pruebas existentes y las capturas conservadas; no
-afirma una ejecución reciente de la suite. Tampoco atribuye aumentos de
-ventas, conversiones o rendimiento sin mediciones.
+No se presentan aumentos de ventas, conversiones o rendimiento sin mediciones.
 
 ## Estado y próximos pasos
 

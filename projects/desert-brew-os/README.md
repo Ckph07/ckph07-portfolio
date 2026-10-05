@@ -4,22 +4,27 @@
 
 **Sistema modular de gestión y ejecución de producción para una cervecería artesanal.**
 
-Desert Brew OS conecta compras, inventario, recetas, producción, ventas B2B y
-finanzas en una misma plataforma. Su propuesta es conservar la trazabilidad
-entre lo que entra al almacén, lo que se transforma, lo que se vende y el costo
-que sustenta cada decisión.
-
-Combina un **MES** —seguimiento de la ejecución de producción— con un **ERP**
-—gestión de recursos y operaciones del negocio—, desarrollado para el contexto
+Combina un **MES** —ejecución de producción— con un **ERP** —gestión de recursos
+y operaciones— para conectar compras, inventario, producción, ventas y finanzas
 de Desert Brew Co.
 
-[Producto](#el-producto) · [Interfaz](#interfaz-del-producto) ·
+- **Rol:** desarrollador principal, con trabajo en arquitectura, backend e interfaz Flutter.
+- **Reto principal:** conservar el origen, los movimientos y los costos de una operación a través de varios dominios.
+- **Estado:** capacidades implementadas en el repositorio; POS/Taproom pausado o futuro.
+- **Evidencia:** revisión de código y documentación al **4 de octubre de 2026**, casos técnicos y una captura de ventas con datos de demostración. Alcance en [Calidad y evidencia](#calidad-y-evidencia).
+
+[Mi aportación](#mi-aportación) · [Producto](#el-producto) · [Interfaz](#interfaz-del-producto) ·
 [Arquitectura](#arquitectura) · [Casos técnicos](#casos-técnicos) ·
 [Calidad](#calidad-y-evidencia) · [Volver al portafolio](../../README.md)
 
-> Portafolio elaborado a partir del código y la documentación local al
-> **4 de octubre de 2026**. Describe capacidades implementadas; no constituye
-> una certificación de despliegue ni de disponibilidad en producción.
+## Mi aportación
+
+Mi trabajo como desarrollador principal abarcó la arquitectura por dominio y
+la implementación del backend y de la aplicación Flutter.
+
+- **Arquitectura:** responsabilidades y contratos entre servicios para seguir compras, inventario, producción, ventas y costos.
+- **Backend:** reglas operativas de trazabilidad, consumo FIFO, ciclos de producción y operaciones que admiten reintentos.
+- **Frontend:** interfaz Flutter organizada por funcionalidades para trabajar con los módulos y sus APIs.
 
 ## El problema
 
@@ -32,9 +37,6 @@ Cuando esas piezas se administran por separado, resulta difícil responder
 preguntas prácticas: ¿qué lote se consumió?, ¿cuánto costó realmente producir
 un litro vendible?, ¿qué barril sigue con un cliente?, ¿qué costo corresponde
 a una venta histórica? y ¿existe evidencia suficiente para calcular el margen?
-
-El reto del proyecto consiste en conectar esos procesos conservando la
-responsabilidad de cada área y la historia de cada operación.
 
 ## El producto
 
@@ -215,6 +217,10 @@ calidad y requieren revisión antes de incorporarse a nuevos agregados.
 
 ## Calidad y evidencia
 
+Ficha preparada a partir del código y la documentación local al **4 de octubre
+de 2026**. Describe capacidades implementadas; el despliegue y la disponibilidad
+en producción no se verificaron durante su preparación.
+
 La revisión local encontró **126 archivos de pruebas Python en `services/`**
 y **89 archivos de pruebas Dart en `desert_brew_app/test/`**. Son conteos de
 archivos presentes al preparar este portafolio, no de casos aprobados ni de
@@ -242,12 +248,5 @@ trazabilidad y las reglas implementadas. Para una siguiente versión del
 portafolio, conviene medir tiempos de captura, diferencias de inventario,
 conciliaciones pendientes y cobertura de costos históricos sobre un periodo
 definido. Esas métricas todavía no se presentan como resultados obtenidos.
-
-## Acerca de esta presentación
-
-Esta ficha resume el proyecto y sus decisiones técnicas. El código y la
-documentación operativa del sistema se administran por separado. Las
-explicaciones y recursos visuales aquí incluidos son suficientes para
-recorrer el portafolio sin acceso al repositorio de implementación.
 
 [Volver a CKPH07 Portfolio](../../README.md)

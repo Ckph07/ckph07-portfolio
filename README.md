@@ -1,14 +1,15 @@
 ![CKPH07 Portfolio: proyectos de software, producto y operación](assets/cover.svg)
 
-# CKPH07 · Portfolio
+# César K. Padilla Hernandez · Desarrollador full stack
 
-**Proyectos de software, producto y operación.**
+**CKPH07 · Software, producto y operación.**
 
-Este portafolio reúne proyectos con problemas concretos, decisiones de diseño
-y arquitectura, y ejemplos de sus interfaces. Cada ficha explica qué se
-construyó, para qué sirve y qué aspectos técnicos lo distinguen.
+Desarrollo aplicaciones que conectan procesos operativos con datos trazables.
+Trabajo con Python/FastAPI, Flutter y React, con foco en reglas de negocio,
+persistencia y diseño de producto. Este portfolio presenta mi participación,
+las decisiones técnicas y la evidencia disponible de cuatro proyectos.
 
-[Ver proyectos](#proyectos) · [Enfoque](#enfoque) · [Perfil de GitHub](https://github.com/Ckph07)
+[Ver proyectos](#proyectos) · [Enfoque](#enfoque) · [Contacto](#contacto)
 
 ## Proyectos
 
@@ -16,16 +17,15 @@ construyó, para qué sirve y qué aspectos técnicos lo distinguen.
 
 **MES + ERP modular para la operación de una cervecería artesanal.**
 
-Conecta compras, inventario, producción, ventas B2B, finanzas y análisis de
-rentabilidad. El diseño conserva la trazabilidad desde los insumos hasta el
-costo histórico de una venta.
+Conecta compras, inventario, producción, ventas B2B y finanzas, conservando
+el origen de los insumos y el costo histórico de cada venta.
+
+**Mi aportación:** desarrollador principal; arquitectura por dominio,
+backend e interfaz Flutter, con foco en trazabilidad y reglas operativas.
 
 ![Desert Brew OS: de la materia prima al margen, con trazabilidad](projects/desert-brew-os/assets/cover.svg)
 
 **Tecnologías:** Flutter · Dart · Python · FastAPI · PostgreSQL · RabbitMQ · Docker
-
-**Aspectos destacados:** inventario FIFO, máquinas de estados de producción,
-eventos durables, precios con aprobación y evaluación sensorial versionada.
 
 **[Explorar el proyecto →](projects/desert-brew-os/README.md)**
 
@@ -33,17 +33,15 @@ eventos durables, precios con aprobación y evaluación sensorial versionada.
 
 **Catálogo, descubrimiento de productos y administración de contenido para una cervecería artesanal.**
 
-Presenta las cervezas y su identidad de marca, ayuda a localizar puntos de
-venta y permite al equipo actualizar disponibilidad y lanzamientos de
-Desert Lab. Combina una experiencia pública con administración autorizada.
+Ayuda a descubrir cervezas y puntos de venta, y permite al equipo mantener
+la disponibilidad y preparar lanzamientos desde una administración autorizada.
+
+**Mi aportación:** desarrollador principal; implementación full stack del
+catálogo, localizador y administración, con persistencia y control de revisiones.
 
 ![Portada pública de Desert Brew Co. en escritorio, capturada en una revisión anterior](projects/dbc-web/assets/hero-desktop.png)
 
 **Tecnologías:** React · TypeScript · vinext/Vite · Tailwind · Leaflet · Cloudflare Workers · D1 · R2
-
-**Aspectos destacados:** diseño para escritorio y móvil, disponibilidad con
-vigencia, edición con control de revisiones y separación de contenido público
-y borradores privados.
 
 **[Explorar el proyecto →](projects/dbc-web/README.md)**
 
@@ -51,18 +49,16 @@ y borradores privados.
 
 **Arquitectura, implementación técnica y despliegue de una aplicación web interactiva.**
 
-Desarrollé el sistema que conecta la experiencia en el navegador con la
-persistencia de sesiones y un panel docente protegido, y realicé su despliegue
-en Render. El contenido y la propuesta pedagógica fueron definidos por el
-equipo del proyecto.
+Conecta una experiencia educativa con persistencia de sesiones y un panel
+docente protegido.
+
+**Mi aportación:** arquitectura, implementación técnica y despliegue en
+Render. El contenido, las ilustraciones y la propuesta pedagógica corresponden
+al equipo del proyecto.
 
 <img src="projects/el-dia-de-tadeo/assets/inicio.jpg" alt="Inicio de El día de Tadeo, capturado en una instancia local de demostración en vista móvil" width="347">
 
 **Tecnologías:** JavaScript · Python · FastAPI · PostgreSQL · SQLAlchemy · Alembic · Render
-
-**Aspectos destacados:** recuperación de sesiones, envíos idempotentes,
-compatibilidad entre versiones y administración protegida. Capturas locales
-con datos ficticios; no acreditan el estado actual del servicio publicado.
 
 **[Explorar el proyecto →](projects/el-dia-de-tadeo/README.md)**
 
@@ -70,17 +66,15 @@ con datos ficticios; no acreditan el estado actual del servicio publicado.
 
 **Control de cuentas, deudas, ahorro y presupuesto para una familia.**
 
-Organiza cuentas personales y compartidas, efectivo, tarjetas, préstamos,
-tandas e inversiones registradas manualmente. Distingue los movimientos
+Organiza cuentas, deudas, ahorro y patrimonio. Distingue los movimientos
 internos del gasto real y permite planear servicios mensuales o bimestrales.
+
+**Mi aportación:** desarrollador principal; arquitectura e implementación
+del MVP, reglas financieras e interfaz Flutter.
 
 ![Family Finance OS: dashboard con datos ficticios de demostración](projects/family-finance-os/assets/dashboard-demo.png)
 
 **Tecnologías:** Flutter · Dart · Python · FastAPI · PostgreSQL · Redis · Docker
-
-**Aspectos destacados:** transferencias con dos movimientos vinculados,
-ahorro separado del gasto, presupuesto bimestral prorrateado y snapshots
-manuales de patrimonio.
 
 **Estado:** MVP local en evolución. Interfaz mostrada con datos ficticios;
 sin conexión bancaria automática.
@@ -94,6 +88,15 @@ sin conexión bancaria automática.
 - **Arquitectura por dominio:** definir responsabilidades explícitas y contratos de integración.
 - **Evidencia:** distinguir capacidades implementadas, demostraciones y trabajo futuro.
 
+## Contacto
+
+Me interesa conversar sobre oportunidades de desarrollo full stack en las que
+pueda aportar al producto, las reglas de negocio y la implementación técnica.
+
+- **Correo:** [c.padilla13.cph@gmail.com](mailto:c.padilla13.cph@gmail.com)
+- **LinkedIn:** [linkedin.com/in/ckph3372](https://www.linkedin.com/in/ckph3372)
+- **GitHub:** [github.com/Ckph07](https://github.com/Ckph07)
+
 ## Acerca de este portafolio
 
 Las fichas son presentaciones públicas de los proyectos. Cada una identifica
@@ -103,5 +106,3 @@ otorga acceso a los sistemas operativos ni a sus repositorios de código.
 Para incorporar otro proyecto, consulta la
 [guía para agregar proyectos](CONTRIBUTING.md) y utiliza la
 [plantilla de ficha](templates/project.md).
-
-**Perfil:** [github.com/Ckph07](https://github.com/Ckph07)

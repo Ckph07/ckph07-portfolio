@@ -2,18 +2,17 @@
 
 **Arquitectura, implementación técnica y despliegue de una aplicación web interactiva.**
 
-Mi participación abarcó la arquitectura del sistema, la implementación
-técnica y el despliegue. El contenido y la propuesta pedagógica fueron
-definidos por el equipo del proyecto.
+El sistema conecta una experiencia educativa en el navegador con persistencia
+de sesiones y un panel docente protegido.
 
-El sistema conecta una experiencia educativa en el navegador con una API de
-persistencia y un panel docente protegido. Mi trabajo se centró en convertir
-los requerimientos del proyecto en una aplicación operable: conservar el
-avance, registrar respuestas y facilitar su consulta, con despliegue en Render.
+- **Rol:** arquitectura, implementación técnica y despliegue en Render.
+- **Reto principal:** recuperar el avance y reintentar envíos conservando la identidad de cada respuesta y la versión de la experiencia.
+- **Estado:** implementación local revisada; despliegue en Render realizado como parte de mi participación.
+- **Evidencia:** casos técnicos y capturas locales del **4 de octubre de 2026**, con SQLite temporal y datos ficticios. Alcance en [Calidad y evidencia](#calidad-y-evidencia).
 
-[Interfaz](#interfaz) · [Arquitectura](#arquitectura-y-tecnologías) ·
+[Mi aportación](#mi-aportación) · [Interfaz](#interfaz) · [Arquitectura](#arquitectura-y-tecnologías) ·
 [Decisiones técnicas](#decisiones-técnicas) · [Despliegue](#despliegue) ·
-[Volver al portafolio](../../README.md)
+[Calidad](#calidad-y-evidencia) · [Volver al portafolio](../../README.md)
 
 ## Mi aportación
 
@@ -23,9 +22,8 @@ avance, registrar respuestas y facilitar su consulta, con despliegue en Render.
 | **Implementación** | Desarrollo técnico de la experiencia interactiva, integración con la API y herramientas de administración y consulta |
 | **Despliegue** | Puesta en marcha en Render, configuración del servicio y la base de datos, variables de entorno y migraciones |
 
-La narrativa, los materiales y los objetivos educativos corresponden al
-equipo del proyecto. Esta ficha presenta mi contribución de ingeniería y
-no atribuye resultados de aprendizaje a la implementación.
+La narrativa, las ilustraciones, los materiales y la propuesta pedagógica
+corresponden al equipo del proyecto. Mi aportación se centra en ingeniería.
 
 ## El reto técnico
 
@@ -43,8 +41,7 @@ caso es la infraestructura que lo hace funcionar.
 
 Capturas de la implementación local, tomadas el **4 de octubre de 2026** en
 vista móvil. Se utilizó una instancia aislada con SQLite temporal: no se
-consultaron registros de participantes reales. Estas imágenes no verifican
-el estado actual del despliegue en Render.
+consultaron registros de participantes reales.
 
 ### Inicio y actividad interactiva
 
@@ -167,11 +164,11 @@ Realicé el despliegue en **Render**. La configuración versionada en
 - **Entorno local:** Docker Compose proporciona PostgreSQL. La instancia usada
   para estas capturas empleó SQLite temporal con datos ficticios.
 
-El despliegue se documenta como parte de mi participación. La revisión para
-esta ficha se hizo sobre el código local y no verificó el servicio remoto
-ni que sus cambios más recientes ya estén publicados.
-
 ## Calidad y evidencia
+
+La revisión para esta ficha se hizo sobre el código local al **4 de octubre
+de 2026**. Las capturas documentan la instancia de demostración; no se verificó
+el servicio remoto en Render ni la publicación de sus cambios más recientes.
 
 El repositorio incluye pruebas para recuperación de sesiones, revisiones de
 progreso, idempotencia de respuestas y finalización, conservación de intentos,
