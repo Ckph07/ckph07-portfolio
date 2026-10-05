@@ -29,6 +29,24 @@ eventos durables, precios con aprobación y evaluación sensorial versionada.
 
 **[Explorar el proyecto →](projects/desert-brew-os/README.md)**
 
+### Desert Brew Co. — Plataforma web
+
+**Catálogo, descubrimiento de productos y administración de contenido para una cervecería artesanal.**
+
+Presenta las cervezas y su identidad de marca, ayuda a localizar puntos de
+venta y permite al equipo actualizar disponibilidad y lanzamientos de
+Desert Lab. Combina una experiencia pública con administración autorizada.
+
+![Portada pública de Desert Brew Co. en escritorio, capturada en una revisión anterior](projects/dbc-web/assets/hero-desktop.png)
+
+**Tecnologías:** React · TypeScript · vinext/Vite · Tailwind · Leaflet · Cloudflare Workers · D1 · R2
+
+**Aspectos destacados:** diseño para escritorio y móvil, disponibilidad con
+vigencia, edición con control de revisiones y separación de contenido público
+y borradores privados.
+
+**[Explorar el proyecto →](projects/dbc-web/README.md)**
+
 ## Enfoque
 
 - **Procesos claros:** organizar el producto alrededor del trabajo que necesita realizar el usuario.

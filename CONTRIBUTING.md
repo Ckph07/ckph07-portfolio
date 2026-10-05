@@ -14,6 +14,11 @@ projects/
     assets/
       cover.svg
       sales-note-demo.png
+  dbc-web/
+    README.md
+    assets/
+      hero-desktop.png
+      hero-mobile.png
 templates/project.md
 ```
 
